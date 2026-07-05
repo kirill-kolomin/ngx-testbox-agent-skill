@@ -1,0 +1,34 @@
+{
+  "name": "ngx-testbox-agent-skill",
+  "version": "0.0.1",
+  "description": "AI Agent skill for the ngx-testbox testing package. Helps to tackle better with integration blackbox testing for Angular apps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirill-kolomin/ngx-testbox-agent-skill.git"
+  },
+  "keywords": [
+    "agent-skill",
+    "AI",
+    "agent",
+    "skill",
+    "Angular",
+    "testing",
+    "Integration",
+    "testing",
+    "Component",
+    "testing",
+    "Testing",
+    "utilities"
+  ],
+  "author": "Kirill Kolomin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kirill-kolomin/ngx-testbox-agent-skill/issues"
+  },
+  "homepage": "https://github.com/kirill-kolomin/ngx-testbox-agent-skill#readme",
+  "files": "skills/**/*"
+}
