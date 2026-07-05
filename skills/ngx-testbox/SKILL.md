@@ -1,6 +1,10 @@
 ---
 name: ngx-testbox
 description: Angular integration tests, ngx-testbox, runTasksUntilStable, runTasksUntilStableAsync, DebugElementHarness, testboxTestId. Use when creating, fixing, or reviewing Angular tests that use ngx-testbox or should use its black-box testing patterns.
+license: MIT
+compatibility:
+  ngx-testbox: >=2.0.0
+  angular: >=9.0.0
 ---
 
 # ngx-testbox
