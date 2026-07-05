@@ -89,7 +89,7 @@ skills/ngx-testbox/SKILL.md
 The skill metadata declares compatibility with:
 
 - `ngx-testbox >=2.0.0`
-- Angular `>=9.0.0`
+- Angular `>=15.0.0`
 
 The skill name in frontmatter is `ngx-testbox` and matches the skill directory name, as required by the Agent Skills packaging conventions.
 
