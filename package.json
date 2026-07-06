@@ -1,6 +1,6 @@
 {
   "name": "ngx-testbox-agent-skill",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AI Agent skill for the ngx-testbox testing package. Helps to tackle better with integration blackbox testing for Angular apps.",
   "main": "index.js",
   "scripts": {
