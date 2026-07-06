@@ -7,6 +7,8 @@
 - a response getter needs to return a `Promise`
 - delayed instructions need real async completion instead of virtual Angular time
 
+If delayed work (setTimeout, setInterval) should keep a zoneless app unstable, prefer app-side `PendingTasks` Angular service for code you control. If the timer lives inside a third-party library and cannot reasonably be wrapped with `PendingTasks`, mock that dependency in the test.
+
 Use `runTasksUntilStableAsync` with `predefinedHttpCallInstructionsAsync` by default unless the surrounding suite is already built around `fakeAsync`.
 
 ## Core Shape

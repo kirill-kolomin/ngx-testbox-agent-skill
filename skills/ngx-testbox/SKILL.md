@@ -48,3 +48,9 @@ Important: both stabilization APIs are supported parts of the library.
 - `runTasksUntilStable` remains an eligible, supported API for `fakeAsync` and existing zone-based suites.
 
 Choose based on the test environment and current suite patterns, not on the assumption that sync support is obsolete.
+
+Zoneless-specific rule:
+
+- If the app is zoneless, prefer the async/await approach.
+- If delayed work should keep the fixture unstable, use Angular `PendingTasks` in the app code when feasible.
+- If the delayed work comes from a third-party library and you cannot realistically wrap it with `PendingTasks`, mock that dependency or the code path that triggers it in the test.

@@ -69,6 +69,8 @@ Key properties:
 - Waits for real async completion via `fixture.whenStable()`.
 - Supports optional `advanceTimers` for environments with fake timers.
 - Throws `LongRunningComponentError` if the component does not settle within `componentLongRunTimeout`.
+- For zoneless apps, delayed work (setTimeout, setInterval) that should count toward stability should use Angular `PendingTasks` from `@angular/core` when the app code controls that work. Requires Angular `>=20.0.0`.
+- If the delayed work comes from third-party timers that cannot realistically be wrapped with `PendingTasks` or you can't use `PendingTasks`, mock those dependencies/places in the test.
 
 ### Sync fakeAsync approach
 
